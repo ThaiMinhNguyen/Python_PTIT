@@ -1,0 +1,6 @@
+ten = input()
+ngaysinh = input()
+d1 = float(input())
+d2 = float(input())
+d3 = float(input())
+print(ten, ngaysinh, "{:.1f}".format(d1+d2+d3))
