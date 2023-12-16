@@ -1,0 +1,15 @@
+f1 = open("DATA1.in", "rb")
+f2 = open("DATA2.in", "rb")
+ls1 = f1.read()
+ls2 = f2.read()
+    # list(map(int, f1.read().split()))
+res = []
+for i in ls1:
+    if i == i[::-1]:
+        if i in ls2:
+            if i not in res:
+                res.append(i)
+res.sort()
+for i in res:
+    print(i, ls1.count(i), ls2.count(i))
+#??????????????????????????????????????
